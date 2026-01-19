@@ -22,12 +22,40 @@ Crea una tabla con 10 servicios reales. Incluye enlace oficial y justifica respo
 ## 🅱️ Tarea B — Funciones principales de cloud (arquitectura)
 Incluye un diagrama (ASCII/Mermaid/imagen) y una explicación breve.
 
+
 ### Diagrama
 (Pega aquí el diagrama)
+flowchart TD
+    A[Usuario/Cliente] -->|Solicita servicio| B[Cloud Provider]
+    
+    B --> C[Computación (IaaS/PaaS)]
+    B --> D[Almacenamiento (Storage)]
+    B --> E[Redes (Networking)]
+    B --> F[Seguridad y Gestión (IAM, Monitoring)]
+    
+    C --> G[Ejecuta Aplicaciones/VMs]
+    D --> H[Guarda datos, Backups]
+    E --> I[Conexiones seguras y balanceo de carga]
+    F --> J[Control de acceso y auditoría]
+
 
 ### Explicación (8–12 líneas)
 (Describe el flujo front → API → BBDD/storage y dónde entra la cloud)
+Este diagrama representa cómo un usuario interactúa con un proveedor de servicios en la nube:
 
+El usuario solicita un servicio (ej. ejecutar una app o guardar datos).
+
+El proveedor de cloud ofrece funciones principales:
+
+Computación: máquinas virtuales, contenedores o plataformas de desarrollo (IaaS/PaaS).
+
+Almacenamiento: bases de datos, archivos, backups.
+
+Redes: conexiones, balanceo de carga y entrega de contenido.
+
+Seguridad y gestión: control de accesos, monitoreo y auditoría.
+
+Cada función permite que la nube ejecute aplicaciones, guarde datos, mantenga conexiones seguras y gestione usuarios y recursos.
 ### Mapeo de funciones cloud a componentes (mínimo 3)
 - Procesamiento → …
 - Ejecución → …
