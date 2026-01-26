@@ -56,11 +56,26 @@ Redes: conexiones, balanceo de carga y entrega de contenido.
 Seguridad y gestión: control de accesos, monitoreo y auditoría.
 
 Cada función permite que la nube ejecute aplicaciones, guarde datos, mantenga conexiones seguras y gestione usuarios y recursos.
+
+Este diagrama muestra cómo un usuario interactúa con un proveedor de servicios en la nube.
+El usuario accede desde el front-end (web o app) y envía una solicitud.
+La petición viaja a través de una API, que gestiona la lógica y valida accesos.
+La capa cloud ejecuta la aplicación usando servicios de computación (IaaS o PaaS).
+Si es necesario, la API consulta o guarda información en bases de datos o almacenamiento en la nube.
+Los servicios de red permiten la comunicación segura y el balanceo de carga.
+La seguridad y gestión controlan identidades, permisos y monitoreo.
+Finalmente, la respuesta vuelve al front-end y se muestra al usuario.
+
 ### Mapeo de funciones cloud a componentes (mínimo 3)
-- Procesamiento → …
-- Ejecución → …
-- Almacenamiento → …
-- Intercambio → … (opcional si ya tienes 3)
+
+- Procesamiento → Servidores cloud / máquinas virtuales / contenedores
+- Ejecución → Aplicaciones backend / servicios PaaS / funciones serverless
+- Almacenamiento → Bases de datos en la nube / almacenamiento de objetos
+- Intercambio → APIs, redes virtuales y balanceadores de carga
 
 ## 📚 Fuentes (enlaces oficiales)
 (Enlaces oficiales usados en la tabla A y en la B)
+
+- AWS – Cloud Computing Overview: https://aws.amazon.com/what-is-cloud-computing/
+- Microsoft Azure – Cloud Concepts: https://learn.microsoft.com/azure/cloud-adoption-framework
+- Google Cloud – Cloud Architecture: https://cloud.google.com/learn/what-is-cloud-computing
